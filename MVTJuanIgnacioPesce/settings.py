@@ -53,7 +53,7 @@ ROOT_URLCONF = 'MVTJuanIgnacioPesce.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['/root/curso/MVTJuanIgnacioPesce/MVTJuanIgnacioPesce/templates'],
+        'DIRS': [BASE_DIR / 'MVTJuanIgnacioPesce/MVTJuanIgnacioPesce/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
