@@ -7,6 +7,8 @@
   <title>Document</title>
 </head>
 <body>
+  <h1>Hoy es {{ FechaActual }}</h1>
+  
   <h2>Familiares de Eduardo:</h2>
   {% for familiar in Familiares %}
   <p>{{ familiar.Nombre }} {{ familiar.Apellido }} es la {{ familiar.Parentesco }} de Eduardo, tiene {{ familiar.Edad }} anios, nacio el {{ familiar.Nacimiento.dia }}/{{ familiar.Nacimiento.mes }}/{{ familiar.Nacimiento.anio }}.</p>
