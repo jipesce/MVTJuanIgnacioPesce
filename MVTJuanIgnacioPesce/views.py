@@ -36,9 +36,9 @@ def familiares(self):
   plantilla = loader.get_template('template1.html')
   documento = plantilla.render(diccionario)
 
-  # for item in diccionario['Familiares']:
-  #   Nacimiento = f"{item['Nacimiento']['anio']}-{item['Nacimiento']['mes']}-{item['Nacimiento']['dia']}"
-  #   familiar = Familiares(nombre=item['Nombre'], apellido=item['Apellido'], parentesco=item['Parentesco'], edad=item['Edad'], nacimiento=Nacimiento)
-  #   familiar.save()
+  for item in diccionario['Familiares']:
+    Nacimiento = f"{item['Nacimiento']['anio']}-{item['Nacimiento']['mes']}-{item['Nacimiento']['dia']}"
+    familiar = Familiares(nombre=item['Nombre'], apellido=item['Apellido'], parentesco=item['Parentesco'], edad=item['Edad'], nacimiento=Nacimiento)
+    familiar.save()
 
   return HttpResponse(documento)
